@@ -6,6 +6,7 @@ class Goog(Test01):
     pass
 x  = Goog()
 x.max2(100,29)
+xxxxxx
 
 
 
