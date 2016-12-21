@@ -15,7 +15,7 @@ def test1():
     print "test001"
 @login
 def test2(name):
-    print "test02sssssss"
+    print "test02"
 
     return name
 
