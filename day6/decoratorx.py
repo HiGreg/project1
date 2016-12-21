@@ -9,6 +9,7 @@ def login(func):
         if vaild == 'greg':
             print '======welcome to  Greg '
             return  func(*args,**kwargs)
+
     return wrapper
 
 def test1():
@@ -20,7 +21,5 @@ def test2(name):
     return name
 
 
-x = test2("xxx")
+test2("xxxxx")
 
-print x.__class__
-print  x
