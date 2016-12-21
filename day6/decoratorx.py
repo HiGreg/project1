@@ -12,7 +12,7 @@ def login(func):
     return wrapper
 
 def test1():
-    print "test01"
+    print "test001"
 @login
 def test2(name):
     print "test02sssssss"
