@@ -15,6 +15,7 @@ def longestlineinfile(path):
     #     if linelen > longest:
     #         longest  = linelen
     # return  longest
+    f.close()
 print  longestlineinfile("/var/log/messages")
 
 
