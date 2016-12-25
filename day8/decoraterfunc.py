@@ -2,16 +2,16 @@
 # -*- coding: UTF-8 -*-
 # __author__  = "Hexing"
 
-def Before(*args,**kwargs):
-    print ("login sucessfully")
 
 def Before(*args,**kwargs):
     print ("login sucessfully")
-
 def After(*args,**kwargs):
     print("this is After")
-
+def Find():
+    print ("this is final step")
+#define decorator with pamar (before, after,findd)
 def DC(*args,**kwargs):
+    #define array to store func
     func_array = args
     def outer(main_func):
         def wrapper(*args,**kwargs):
@@ -21,8 +21,7 @@ def DC(*args,**kwargs):
             func_array[2]()
         return wrapper
     return outer
-def Findd():
-    print ("this is final step")
+
 @DC(Before,After,Findd)
 def Hello(name,age):
     print (" %s said hello,age is %s" % (name,age) )
